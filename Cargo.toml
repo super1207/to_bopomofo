@@ -1,6 +1,6 @@
 [package]
 name = "to_bopomofo"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Converts a pinyin string to a Bopomofo string."
 license = "MIT"
