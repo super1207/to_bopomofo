@@ -2,12 +2,22 @@
 
 Converts a pinyin string to a Bopomofo string
 
-### example
+### install
+
+```
+cargo add to_bopomofo
+```
+
+### use
 
 ```rust
 use to_bopomofo::to_bopomofo;
-let bopomofo1 = to_bopomofo("ni");
-println!("bopomofo:{bopomofo1:?}"); // bopomofo:Some("ㄋㄧ")
-let bopomofo2 = to_bopomofo("wrong pinyin");
-println!("bopomofo:{bopomofo2:?}"); // bopomofo:None
+
+fn main() {
+    let bopomofo1 = to_bopomofo("ni");
+    println!("bopomofo:{bopomofo1:?}"); // bopomofo:Some("ㄋㄧ")
+    let bopomofo2 = to_bopomofo("wrong pinyin");
+    println!("bopomofo:{bopomofo2:?}"); // bopomofo:None
+}
+
 ```
